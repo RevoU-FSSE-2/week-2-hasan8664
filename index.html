@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A web application to show probolinggo tourism"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Mohammad Hasan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title -->
+    <title>Probolinggo Tourism</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="#"
+          ><img src="assets/header/2.png" alt="logo bromo"
+        /></a>
+        <ul id="list-menu" class="list-menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#wisata">TRAVEL</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div id="menu" class="menu">
+          <span id="nav-icon" class="nav-icon"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="home-caption">
+          <h1 class="greting">
+            Hi <span id="nama"></span>, Welcome to Probolinggo
+          </h1>
+          <!-- <h1>Probolinggo Tourism</h1> -->
+          <p>Find a lot of places and culinary typical of Probolinggo</p>
+          <a href="#wisata" class="btn">Let's go!</a>
+        </div>
+
+        <script>
+          var name = prompt("Enter your name");
+          document.getElementById("nama").innerText = name;
+        </script>
+
+        <div class="slider">
+          <div class="slideshow">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <input type="radio" name="radio-btn" id="radio5" />
+
+            <div class="slide first">
+              <a href="" title="BJBR">
+                <div class="container">
+                  <h2>BJBR</h2>
+                </div>
+
+                <img src="assets/slider/bjbr.jpg" alt="BJBR" />
+              </a>
+            </div>
+
+            <div class="slide">
+              <a href="" title="Bromo">
+                <div class="container">
+                  <h2>Bromo</h2>
+                </div>
+
+                <img src="assets/slider/bromo-4.jpg" alt="Bromo" />
+              </a>
+            </div>
+
+            <div class="slide">
+              <a href="" title="Gili">
+                <div class="container">
+                  <h2>Gili Island</h2>
+                </div>
+
+                <img src="assets/slider/gili.jpeg" alt="Gili Island" />
+              </a>
+            </div>
+
+            <div class="slide">
+              <a href="" title="Patung KCW">
+                <div class="container">
+                  <h2>Patung KCW</h2>
+                </div>
+
+                <img src="assets/slider/kcw.jpeg" alt="Patung KCW" />
+              </a>
+            </div>
+
+            <div class="slide">
+              <a href="" title="PLTU Paiton">
+                <div class="container">
+                  <h2>PLTU Paiton</h2>
+                </div>
+
+                <img src="assets/slider/pltu.jpeg" alt="PLTU Paiton" />
+              </a>
+            </div>
+
+            <div class="slide-btn">
+              <label for="radio1" class="dot dot1"></label>
+              <label for="radio2" class="dot dot2"></label>
+              <label for="radio3" class="dot dot3"></label>
+              <label for="radio4" class="dot dot4"></label>
+              <label for="radio5" class="dot dot5"></label>
+            </div>
+
+            <div class="prevnext-btn">
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="wisata">
+        <h1>Explore your Interest</h1>
+        <div class="content">
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Nature</h2>
+                <p class="snippet">
+                  Explore the magnificent white sandy beaches, great volcanoes
+                  or wonderful views from the hills
+                </p>
+              </figcaption>
+              <img src="assets/images/travel/nature.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Activities & Adventures</h2>
+                <p class="snippet">Feel the adrenaline or various advantures</p>
+              </figcaption>
+              <img src="assets/images/travel/adventure.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Culinary</h2>
+                <p class="snippet">
+                  Taste a variety of delicious Manado cuisine
+                </p>
+              </figcaption>
+              <img src="assets/images/travel/culinary.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">National Park</h2>
+                <p class="snippet">
+                  Come and see a variety of endemic creatures and flora in North
+                  Sulawesi
+                </p>
+              </figcaption>
+              <img src="assets/images/travel/national-park.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Hot Spring</h2>
+                <p class="snippet">Relax with going to Hot Spring nearby you</p>
+              </figcaption>
+              <img src="assets/images/travel/hot-spring.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Events & Festivals</h2>
+                <p class="snippet">
+                  Don't miss the events and festivals with dance and culture of
+                  Manado
+                </p>
+              </figcaption>
+              <img src="assets/images/travel/festival.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Diving</h2>
+                <p class="snippet">
+                  Enjoy the beauty of marine life by diving in various places
+                </p>
+              </figcaption>
+              <img src="assets/images/travel/diving.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Manado Heritage</h2>
+                <p class="snippet">
+                  See the relics left by the Manado ancestors
+                </p>
+              </figcaption>
+              <img src="assets/images/travel/heritage.png" alt="" />
+            </a>
+          </figure>
+
+          <figure class="interest">
+            <a href="">
+              <figcaption class="caption">
+                <h2 class="title">Shopping</h2>
+                <p class="snippet">
+                  Don't forget to bring a souvenir from Manado to take home
+                </p>
+              </figcaption>
+              <img src="assets/images/travel/shopping.png" alt="" />
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section id="about">
+        <h1>Probolinggo</h1>
+        <article class="content">
+          <p>
+            Tourist attractions in Probolinggo include Probolinggo Regency and
+            Probolinggo City, East Java Province. As well as presenting very
+            diverse tourist attractions, touching all ages. Foreign tourists
+            already know several tourist attractions in Probolinggo. And
+            Probolinggo tourism is also more complete by presenting educational,
+            historical tours. Open tourist attractions in Probolinggo depend on
+            the zoning level's status, whether it's the level status of
+            Probolinggo Regency or Probolinggo City. And this is a review of
+            tourist attractions in Probolinggo that we have prepared for you as
+            an initial reference for determining tourist destinations when the
+            holidays arrive.
+          </p>
+        </article>
+      </section>
+
+      <section id="form-section">
+        <h2>Explore with us</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+
+            <div>
+              <p>Are you living in Indonesia?</p>
+              <input type="radio" id="yes" name="isIndonesia" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isIndonesia" value="Female" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>What do you think about a probolinggo?</p>
+              <input
+                id="cute"
+                type="checkbox"
+                name="personality"
+                value="cute"
+              />
+              <label for="cute">Vocation</label>
+              <input
+                id="adorable"
+                type="checkbox"
+                name="personality"
+                value="adorable"
+              />
+              <label for="adorable">Culinary</label>
+              <input
+                id="beautiful"
+                type="checkbox"
+                name="personality"
+                value="beautiful"
+              />
+              <label for="beautiful">Event</label>
+            </div>
+            <div>
+              <p>Tell us about your brief experience here:</p>
+              <textarea rows="5"></textarea>
+            </div>
+            <div>
+              <p>Upload your favorite vacation picture here:</p>
+              <input
+                type="file"
+                id="photo"
+                name="myPenguinPhoto"
+                required
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- <div class="to-top-wrapper">
+            <a href="#" class="to-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div> -->
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <p class="copyright">
+        Copyright © 2023 By Mohammad Hasan | Weekly 2 Assignment.
+      </p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Side Bar -->
+    <script>
+      const menu = document.getElementById("menu");
+      const listMenu = document.getElementById("list-menu");
+      const icon = document.getElementById("nav-icon");
+
+      menu.addEventListener("click", () => {
+        listMenu.classList.toggle("active");
+        icon.classList.toggle("active-icon");
+      });
+
+      listMenu.onclick = function () {
+        listMenu.classList.remove("active");
+        icon.classList.remove("active-icon");
+      };
+    </script>
+
+    <!-- Scroll Navbar-->
+    <script>
+      window.onscroll = () => {
+        const nav = document.querySelector("nav");
+        if (this.scrollY <= 10) nav.className = null;
+        else nav.className = "scroll";
+      };
+    </script>
+    <script>
+      const slider = document.querySelector(".slider");
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+
+      var counter = 1;
+      var playSlider;
+      var repeater = () => {
+        playSlider = setInterval(function () {
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+          if (counter > 5) {
+            counter = 1;
+          }
+        }, 3000);
+      };
+      repeater();
+
+      function prevSlide() {
+        counter -= 1;
+        if (counter == 0) {
+          counter = 5;
+        }
+        document.getElementById("radio" + counter).checked = true;
+      }
+
+      function nextSlide() {
+        counter += 1;
+        if (counter > 5) {
+          counter = 1;
+        }
+        document.getElementById("radio" + counter).checked = true;
+      }
+
+      prev.addEventListener("click", function () {
+        prevSlide();
+      });
+
+      next.addEventListener("click", function () {
+        nextSlide();
+      });
+
+      slider.addEventListener("mouseover", () => {
+        clearInterval(playSlider);
+      });
+
+      slider.addEventListener("mouseout", () => {
+        repeater();
+      });
+    </script>
+  </body>
+</html>
